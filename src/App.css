@@ -16,16 +16,40 @@
   align-items: center;  
 }
 
-/* .presentTense {
-  margin-top: 50px;
-  margin-bottom: 250px;
+.conjugationTable {
+  border-collapse: collapse; /* Ensures borders are connected */
+  width: 50%;
+  table-layout: fixed;
+
+  
 }
 
-.pastTense {
-  margin-top: auto;
-  margin-bottom: 250px;
+.conjugationTable .bold {
+  font-weight: bold; /* Apply bold style */
 }
 
-.futureTense {
-  margin-top: auto;
-} */
+.conjugationTable td {
+  border: 1px solid #ddd;  /* Inner cell borders */
+  padding: 8px;
+  text-align: center; /* Optional: Align text in the center */
+}
+
+.conjugationTable tr:first-child td {
+  border-top: none; /* Keep border at the top of the first row */
+}
+
+.conjugationTable tr:last-child td {
+  border-bottom: none; /* Keep border at the bottom of the last row */
+}
+
+.conjugationTable td:first-child {
+  border-left: none; /* Keep left border for the first column */
+}
+
+.conjugationTable td:last-child {
+  border-right:none; /* Keep right border for the last column */
+}
+
+.conjugationTable td:first {
+  border-right:none; /* Keep right border for the last column */
+}

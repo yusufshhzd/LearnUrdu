@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SimplePresent from './pages/SimplePresent';
+import './App.css';
 
 
 function App() {
